@@ -1,0 +1,18 @@
+    <div class="contanier  py-4">
+        <div class="row">
+            <div class="card-columns">
+                {{#each publications}}
+                     <div class="card">
+                         <img src="{{path}}" alt="" class="card-img-top" >
+                         <div class="card-body">
+                             <h5 class="card-title text-center border-bottom">{{title}}</h5>
+                             <p class="card-text">{{description}}</p>
+                             <p class="card-footer">{{createdAt}}</p>
+                             <a href="/publication/{{_id}}" class="btn btn-info d-block">View</a>
+                             <a href="/publication/edit/{{_id}}" class="btn btn-warning d-block mt-3 ">Update</a>
+                         </div>
+                     </div>
+                {{/each}}
+            </div>
+        </div>
+     </div>
